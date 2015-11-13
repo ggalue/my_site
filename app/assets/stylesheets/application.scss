@@ -17,3 +17,88 @@
  @import 'bootstrap-sprockets';
  @import 'bootstrap';
  @import 'font-awesome';
+
+body {
+  font: "helvetica";
+  font-weight: 100;
+}
+
+.navbar-default{
+	font-family: 'Puritan', serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.header {
+	text-align: center;
+}
+
+.footer {
+	text-align: center;
+	margin: 2em 0;
+}
+
+#atl {
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+.row {
+	margin: 1.5em 0;
+	text-align: center;
+	font-size: 24px;
+}
+
+a:hover {
+	font-weight: 600;
+	color: #79C7FD;
+	text-decoration: none;
+}
+
+.window {
+	background-color: #D2CFD4;
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+#about {
+	font-size: 18px;
+	text-align: left;
+}
+
+.me_pic {
+	vertical-align: middle;
+	display: inline-block;
+	max-width: 55%;
+}
+
+#contact {
+	font-size: 18px;
+	text-align: left;
+}
+
+#contact-info {
+	font-size: 18px;
+	text-align: left;
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+#services {
+	font-size: 18px;
+	text-align: left;
+}
+
+#services-info {
+	font-size: 18px;
+	text-align: left;
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+
+
+
+
+
+

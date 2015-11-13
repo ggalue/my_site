@@ -1,14 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MySite</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Puritan' rel='stylesheet' type='text/css'>
+
+  <title>Geraldine Galue</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+<div class="navbar navbar-default">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      	<li><%= link_to "home", root_path %></li>
+        <li><%= link_to "about", about_path %></li>
+        <li><%= link_to "services", services_path %></li>
+        <li><%= link_to "blog" %></li>
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "contact", contact_path %></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="header">
+	<p>
+		<%= image_tag "logo.jpg", class: "logo", alt: "logo"%>
+	</p>
+</div>
+
 <%= yield %>
+
+<div class="footer">
+	<p>Follow Me!</p>
+	<%= link_to image_tag("email.jpg"), "mailto:geraldinegalue@gmail.com", alt: "email" %>
+	<%= link_to image_tag("linkedin.jpg"), "http://linkedin.com/in/ggalue", alt: "linkedin" %>
+	<%= link_to image_tag("twitter.jpg"), "https://twitter.com/ggalue", alt: "twitter" %>
+	<%= link_to image_tag("github.jpg"), "http://github.com/ggalue", alt: "github" %>
+</div>
+
 
 </body>
 </html>
