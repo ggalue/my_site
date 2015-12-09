@@ -33,6 +33,10 @@ body {
 	text-align: center;
 }
 
+#center-it {
+	text-align: center;
+}
+
 .footer {
 	text-align: center;
 	margin: 2em 0;
@@ -56,7 +60,7 @@ a:hover {
 }
 
 .window {
-	background-color: #D2CFD4;
+	background-color: #D0C7D4;
 	margin-top: 2em;
 	margin-bottom: 1em;
 }
@@ -67,9 +71,9 @@ a:hover {
 }
 
 .me_pic {
-	vertical-align: middle;
+	vertical-align: center;
 	display: inline-block;
-	max-width: 55%;
+	max-width: 60%;
 }
 
 #contact {

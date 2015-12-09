@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'blog/index'
+
   root 'welcome#index'
 
   get 'contact' => 'welcome#contact'
@@ -7,6 +9,10 @@ Rails.application.routes.draw do
   get 'about' => 'welcome#about'
 
   get 'services' => 'welcome#services'
+
+  get 'blog' => 'blog#index'
+
+  get 'blog/post1' => 'blog#post1'
 
  
   # The priority is based upon order of creation: first created -> highest priority.
