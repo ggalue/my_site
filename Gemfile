@@ -18,6 +18,17 @@ gem 'bootstrap-sass'
 
 gem 'font-awesome-rails'
 
+group :development do
+  gem 'sqlite3'
+  gem 'better_errors'
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+  gem 'aws-sdk', '<2.0'
+end
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
