@@ -44,13 +44,21 @@
 
 <%= yield %>
 
-<div class="footer">
+<!-- <div class="footer">
 	<p>Follow Me!</p>
 	<%= link_to image_tag("email.jpg"), "mailto:geraldinegalue@gmail.com", alt: "email" %>
-	<%= link_to image_tag("linkedin.jpg"), "http://linkedin.com/in/ggalue", alt: "linkedin" %>
-	<%= link_to image_tag("twitter.jpg"), "https://twitter.com/ggalue", alt: "twitter" %>
-	<%= link_to image_tag("github.jpg"), "http://github.com/ggalue", alt: "github" %>
-</div>
+	<%= link_to image_tag("linkedin.jpg"), "http://linkedin.com/in/ggalue", target: "_blank", alt: "linkedin" %>
+	<%= link_to image_tag("twitter.jpg"), "https://twitter.com/ggalue", target: "_blank", alt: "twitter" %>
+	<%= link_to image_tag("github.jpg"), "http://github.com/ggalue", target: "_blank", alt: "github" %>
+</div> -->
+<div class="footer">
+  <p>Follow Me</p>
+    <a href="mailto:geraldinegalue@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+    <a href="http://linkedin.com/in/ggalue" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+    <a href="http://github.com/ggalue" target="_blank"><i class="fa fa-github-square fa-2x"></i>
+    <a href="https://twitter.com/ggalue" target="_blank"><i class="fa fa-twitter-square fa-2x"></i>
+
+  </div>
 
 
 </body>
