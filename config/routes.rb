@@ -8,6 +8,10 @@ Rails.application.routes.draw do
 
   get 'about' => 'welcome#about'
 
+  get 'experience' => 'welcome#experience'
+
+  get 'portfolio' => 'welcome#portfolio'
+
   get 'services' => 'welcome#services'
 
   get 'blog' => 'blog#index'
