@@ -19,39 +19,32 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-      	<li><%= link_to "HOME", root_path %></li>
-        <li><%= link_to "ABOUT", about_path %></li>
-        <li><%= link_to "EXPERIENCE", experience_path %></li>
-        <li><%= link_to "PORTFOLIO", portfolio_path %></li>
-        <li><%= link_to "CAN I HELP YOU?", services_path %></li>       
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "BLOG", blog_path %></li>
-        <li><%= link_to "CONTACT", contact_path %></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-<div class="header">
-	<p id="center-it">
-		<%= image_tag "logo.png", class: "logo", alt: "logo"%>
-	</p>
-</div>
-
-<%= yield %>
-<div class="footer">
-  <p id="center-it">Follow Me</p>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><%= link_to "HOME", root_path %></li>
+          <li><%= link_to "ABOUT", about_path %></li>
+          <li><%= link_to "EXPERIENCE", experience_path %></li>
+          <li><%= link_to "PORTFOLIO", portfolio_path %></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to "BLOG", blog_path %></li>
+          <li><%= link_to "CONTACT", contact_path %></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="header">
+    <p id="center-it">
+      <%= image_tag "logo.png", class: "logo", alt: "logo"%>
+    </p>
+  </div>
+  <%= yield %>
+  <div class="footer">
+    <p id="center-it">Follow Me</p>
     <a href="mailto:geraldinegalue@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
     <a href="http://linkedin.com/in/ggalue" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
     <a href="http://github.com/ggalue" target="_blank"><i class="fa fa-github-square fa-2x"></i>
     <a href="https://twitter.com/ggalue" target="_blank"><i class="fa fa-twitter-square fa-2x"></i>
-  </div>
-
-
+    </div>
 </body>
 </html>

@@ -12,8 +12,6 @@ Rails.application.routes.draw do
 
   get 'portfolio' => 'welcome#portfolio'
 
-  get 'services' => 'welcome#services'
-
   get 'blog' => 'blog#index'
 
   get 'blog/post1' => 'blog#post1'
